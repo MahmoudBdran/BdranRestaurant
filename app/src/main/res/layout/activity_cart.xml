@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    tools:context=".CartPackage.CartActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/backgroundfood"
+            android:scaleType="fitXY"
+            />
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbar"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cart_layout"
+            android:layout_marginTop="200dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_cart_price_tv"
+                    android:text="Total price  = $"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/order_total_price_tv"
+
+                    />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/order_total_price_tv"
+                android:layout_above="@+id/order_btn"
+                android:id="@+id/order_rv"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/emptycart"
+                android:layout_centerInParent="true"
+                android:id="@+id/empty_cart_iv"
+                android:alpha="0.5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Items"
+                android:layout_below="@+id/empty_cart_iv"
+                android:gravity="center"
+                android:textSize="35dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/no_items_tv"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="Order"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:backgroundTint="#FF9800"
+                android:id="@+id/order_btn"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                />
+        </RelativeLayout>
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        ads:adSize="BANNER"-->
+
+<!--        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" >-->
+<!--        &lt;!&ndash;  test ad until i put it on google play :(  &ndash;&gt;-->
+<!--    </com.google.android.gms.ads.AdView>-->
+
+</RelativeLayout>

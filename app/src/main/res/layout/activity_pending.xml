@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PendingPackage.PendingActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/backgroundfood"
+        android:scaleType="fitXY"
+        />
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:titleTextColor="#fff"
+        android:id="@+id/pending_toolbar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cart_layout"
+        android:layout_marginTop="200dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_cart_price_tv"
+            android:text="Total price  = $"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/pending_orders_total_price_tv"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pending_orders_total_price_tv"
+            android:layout_above="@+id/order_btn"
+            android:alpha="0.5"
+            android:id="@+id/pending_rv"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:theme="@style/AppTheme"
+tools:context=".ServePackage.ServeActivity">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:src="@drawable/backgroundfood"
+    android:scaleType="fitXY"
+    />
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:id="@+id/toolbar"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cart_layout"
+    android:layout_marginTop="200dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_cart_price_tv"
+        android:text="Total price  = $"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/serve_order_total_price_tv"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/serve_order_total_price_tv"
+        android:layout_above="@+id/accept_order"
+        android:id="@+id/serve_rv"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Accept"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:backgroundTint="#06C503"
+        android:id="@+id/accept_order"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif"
+        />
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mahmoud"
+        android:id="@+id/serve_username"
+        android:layout_marginTop="100dp"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01205057427"
+        android:id="@+id/serve_phone"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/serve_username"/>
+</RelativeLayout>

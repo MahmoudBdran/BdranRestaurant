@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/order_item"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_card"
+        android:elevation="20dp"
+        app:fabAlignmentMode="end"
+        app:fabCradleMargin="20dp"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/category_image"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/barbcued_burger"
+                android:scaleType="fitXY"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/category_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Barbcued Burger"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/category_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="burger sandwitch with a big slice of meat barbcued with big slices of union into a hot bread"
+                    android:layout_marginLeft="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:textColor="#C10202"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-light"/>
+                    <TextView
+                        android:id="@+id/category_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.67"
+                        android:textColor="#C10202"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-light"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cart"
+        android:backgroundTint="#42DF03"
+        app:layout_anchor="@id/order_item"
+        app:layout_anchorGravity="bottom|right"
+        app:fabCradleMargin="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:borderWidth="0dp"
+        android:id="@+id/order_fbtn"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

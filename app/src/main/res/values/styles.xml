@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#AC4501</item>
+        <item name="colorPrimaryDark">#2E2E2E</item>
+        <item name="colorAccent">#373737</item>
+    </style>
+    <style name="RippleStyleGray">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#A64C26</item>
+        <item name="mrl_rippleAlpha">0.6</item>
+    </style>
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">#fff</item>
+    </style>
+    <style name="registerActivityColors">
+        <item name="colorPrimary">#399FCF</item>
+        <item name="colorPrimaryDark">#399FCF</item>
+        <item name="colorAccent">#399FCF</item>
+    </style>
+<style name="fab_theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="colorAccent">#FF9800</item>
+    <item name="colorPrimary">#AC4501</item>
+    <item name="colorPrimaryDark">#2E2E2E</item>
+</style>
+    <style name="serveActivityStyle" parent="Theme.MaterialComponents.Light">
+        <item name="colorAccent">#FF9800</item>
+        <item name="colorPrimaryDark">#804D03</item>
+        <item name="colorPrimary">#FF9800</item>
+    </style>
+</resources>

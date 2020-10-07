@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "587488053443",
+    "firebase_url": "https://bdran-s-restaurant.firebaseio.com",
+    "project_id": "bdran-s-restaurant",
+    "storage_bucket": "bdran-s-restaurant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587488053443:android:5efeed1dd556b015a23a76",
+        "android_client_info": {
+          "package_name": "com.example.bdranrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587488053443-rnpp0hrtdm82s55qi1tf3q9vl1790hss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bdranrestaurant",
+            "certificate_hash": "b03920ccbecaf66fc851f5d8528a51e9bd986379"
+          }
+        },
+        {
+          "client_id": "587488053443-ulqpkcl6029drs9deve6tosscb7a0ukm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArGidcW3bEbvy3UFV2oMIP3P21XQUuCho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587488053443-ulqpkcl6029drs9deve6tosscb7a0ukm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

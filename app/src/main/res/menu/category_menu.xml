@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="BURGER"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_burger"
+        android:id="@+id/burger"/>
+
+    <item
+        android:id="@+id/chicken"
+        android:title="CHICKEN"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_chicken"
+        />
+    <item
+        android:id="@+id/pizza"
+        android:title="PIZZA"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_pizza"
+        />
+</menu>

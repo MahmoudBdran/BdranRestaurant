@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrinksPackage.DrinksActivity"
+    android:theme="@style/AppTheme"
+    android:id="@+id/drinks_root_layout">
+
+
+    <com.smarteist.autoimageslider.SliderView
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:id="@+id/above_slider_drinks"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="10dp"
+        app:sliderIndicatorMarginBottom="70dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#FFFFFF"
+        app:sliderIndicatorUnselectedColor="#5a5a5a"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderStartAutoCycle="true"
+        app:sliderScrollTimeInSec="3"
+
+        >
+
+
+
+    </com.smarteist.autoimageslider.SliderView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mahmoud bdran"
+        android:textSize="18dp"
+        android:layout_margin="10dp"
+        android:textColor="#dedede"
+        android:id="@+id/drinks_username_tv"
+        android:fontFamily="sans-serif-light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        android:id="@+id/drinks_title_layout"
+        android:background="@drawable/rounded_green_drinks_layout"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Bdran's Restaurant"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Soft Drinks"
+                        android:textColor="#E6E6E6"
+                        app:chipBackgroundColor="#429E1D"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Juice"
+                        android:textColor="#E6E6E6"
+                        app:chipBackgroundColor="#429E1D"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold"
+                        android:textColor="#E6E6E6"
+                        app:chipBackgroundColor="#429E1D"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Milkshake"
+                        android:textColor="#E6E6E6"
+                        app:chipBackgroundColor="#429E1D"
+                        />
+
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5     309 reviews"
+                    android:textSize="17dp"
+                    android:textColor="#272626"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_24dp"
+        app:layout_anchor="@id/above_slider_drinks"
+        app:layout_anchorGravity="right"
+        app:backgroundTint="#42DF03"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/drinks_settings_fab"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shopping_cart_24dp"
+        android:id="@+id/drinks_cart_fab"
+        app:fabSize="mini"
+        android:tint="#ffffff"
+        app:layout_anchor="@id/above_slider_drinks"
+        app:layout_anchorGravity="right"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="#42DF03"
+        android:layout_marginRight= "85dp"
+        android:layout_marginBottom="10dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logout"
+        android:id="@+id/drinks_exit_fab"
+        app:fabSize="mini"
+        app:backgroundTint="#9F0202"
+        android:theme="@style/fab_theme"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="24dp"
+        app:layout_anchor="@id/above_slider_drinks"
+        app:layout_anchorGravity="right"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pending"
+        android:id="@+id/drinks_pending_fab"
+        app:fabSize="mini"
+        app:backgroundTint="#42DF03"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="70dp"
+        app:layout_anchor="@id/above_slider_drinks"
+        app:layout_anchorGravity="right"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_peekHeight="335dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_layout2"
+
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/categories_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/rounded_layout2"
+            app:itemTextColor="#000000"
+            app:menu="@menu/drinks_menu"
+
+
+            >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/drinks_rv"/>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
